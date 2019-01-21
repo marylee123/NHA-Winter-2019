@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button id="b1" onclick=""></button>
+		<button id="b2"></button>
+
+		<script>
+			/*function Choice () {
+    			const box = document.getElementById("box");
+   				const yes = document.getElementById("yes");
+    			const no = document.getElementById("no");
+
+    			if (yes.clicked == true) {
+       				box.style.backgroundColor = "red";
+    			} else if (no.clicked == true) {
+        			box.style.backgroundColor = "green";
+    			} else {
+        			box.style.backgroundColor = "purple";
+        		}
+			};
+
+			Choice ();*/
+			//$("button").click(()=>{
+				//const b = document.getElementById("b1");
+				//b.style.backgroundColor = "red";
+				//document.getElementsByTagName("button").style.background="red";
+				$("#b1").click(()=>{
+					//document.getElementsByTagName("button").style.background="red";
+					//document.getElementById('button').onclick = function() {
+  						event.currentTarget.style.backgroundColor = "red";
+  					//}
+				})
+			//});
+		</script>
+		<style>
+			button{
+    			width: 200px;
+    			height: 200px;
+
+			}
+		</style>
+	</body>
+</html>

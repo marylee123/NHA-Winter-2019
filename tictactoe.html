@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="b">
+			<button id="b1"></button>
+			<button id="b2"></button>
+			<button id="b3"></button><br>
+
+			<button id="b4"></button>
+			<button id="b5"></button>
+			<button id="b6"></button><br>
+
+			<button id="b7"></button>
+			<button id="b8"></button>
+			<button id="b9"></button><br>
+		<script>
+			let button = document.getElementsByClassName("b");
+			let count = 0;
+			button.onclick = count += 1;				
+			$(".b").click(()=>{
+				if(count%2 === 0){
+					if(document.getElementById("button#b1").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b2").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b3").clicked == true){
+					 	event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b4").clicked == true){
+					 	event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b5").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b6").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b7").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b8").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+					else if(document.getElementById("button#b9").clicked == true){
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				}
+				else{
+					if(document.getElementById("button#b1").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b2").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b3").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b4").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b5").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b6").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b7").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b8").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(document.getElementById("button#b9").clicked == true){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+				}
+			});
+
+		</script>
+		<style>
+			button{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</body>
+</html>
