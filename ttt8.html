@@ -17,15 +17,20 @@
 
 		<script>
 			let count = 0;
-			$("button#b1").click((event)=>{
+			$("button").click((event)=>{
+				count += 1;
+				const box = event.currentTarget;
+				const id = $("box").attr("id","b1");
 				if(count%2 === 0){
 					event.currentTarget.style.backgroundColor = "blue";
-					//$("button").html("X");
+					$(event.currentTarget).addClass("b");
 				}
 				else{
 					event.currentTarget.style.backgroundColor = "red";
-					//$("button").html("O");
+					$(event.currentTarget).addClass("r");
 				}
+
+				console.log(id);
 			});
 			
 		</script>

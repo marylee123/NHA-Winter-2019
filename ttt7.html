@@ -17,14 +17,21 @@
 
 		<script>
 			let count = 0;
-			$("button#b1").click((event)=>{
+			$("button").click((event)=>{
+				count += 1;
 				if(count%2 === 0){
-					event.currentTarget.style.backgroundColor = "blue";
-					//$("button").html("X");
+					if(!$(event.currentTarget).hasClass("r")||!$(event.currentTarget).hasClass("b")){
+						event.currentTarget.style.backgroundColor = "blue";
+						$(event.currentTarget).addClass("b");
+						$(event.currentTarget).removeClass("r");
+					}
 				}
 				else{
-					event.currentTarget.style.backgroundColor = "red";
-					//$("button").html("O");
+					if(!$(event.currentTarget).hasClass("r")||!$(event.currentTarget).hasClass("b")){
+						event.currentTarget.style.backgroundColor = "red";
+						$(event.currentTarget).addClass("r");
+						$(event.currentTarget).removeClass("b");
+					}
 				}
 			});
 			

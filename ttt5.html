@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button id="b1"></button>
+		<button id="b2"></button>
+		<button id="b3"></button><br>
+		
+		<button id="b4"></button>
+		<button id="b5"></button>
+		<button id="b6"></button><br>
+		
+		<button id="b7"></button>
+		<button id="b8"></button>
+		<button id="b9"></button><br>
+
+		<script>
+			let count = 0;
+			$("button").click((event)=> {
+				count += 1;
+				if(count%2 === 0){
+					if(event.currentTarget === $("button#b1")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b2")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b3")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b4")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b5")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b6")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b7")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b8")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else if(event.currentTarget === $("button#b9")){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					//$("button").html("X");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					//$("button").html("O");
+				}
+
+			});
+			
+		</script>
+		<style>
+			button{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</body>
+</html>

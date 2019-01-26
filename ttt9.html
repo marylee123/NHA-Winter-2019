@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button id="b1"></button>
+		<button id="b2"></button>
+		<button id="b3"></button><br>
+		
+		<button id="b4"></button>
+		<button id="b5"></button>
+		<button id="b6"></button><br>
+		
+		<button id="b7"></button>
+		<button id="b8"></button>
+		<button id="b9"></button><br>
+
+		<script>
+			let count = 0;
+			$("button").click((event)=>{
+				count += 1;
+				const box = event.currentTarget;
+			});
+			$("#b1").click((event)=>{
+				let id = $("box").attr("id","b1");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b2").click((event)=>{
+				let id = $("box").attr("id","b2");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b3").click((event)=>{
+				let id = $("box").attr("id","b3");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b4").click((event)=>{
+				let id = $("box").attr("id","b4");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b5").click((event)=>{
+				let id = $("box").attr("id","b5");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b6").click((event)=>{
+				let id = $("box").attr("id","b6");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b7").click((event)=>{
+				let id = $("box").attr("id","b7");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b8").click((event)=>{
+				let id = $("box").attr("id","b8");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			$("#b9").click((event)=>{
+				let id = $("box").attr("id","b9");
+				console.log(id)
+				if(count%2 === 0){
+					event.currentTarget.style.backgroundColor = "blue";
+					$(event.currentTarget).addClass("b");
+				}
+				else{
+					event.currentTarget.style.backgroundColor = "red";
+					$(event.currentTarget).addClass("r");
+				}
+			});
+			
+		</script>
+		<style>
+			button{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</body>
+</html>

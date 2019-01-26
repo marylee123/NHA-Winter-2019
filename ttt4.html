@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button id="b1"></button>
+		<button id="b2"></button>
+		<button id="b3"></button><br>
+		
+		<button id="b4"></button>
+		<button id="b5"></button>
+		<button id="b6"></button><br>
+		
+		<button id="b7"></button>
+		<button id="b8"></button>
+		<button id="b9"></button><br>
+
+		<script>
+			let count = 0;
+			$("button").click(()=>{
+				count += 1;
+				$("button#b1").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b2").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b3").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b4").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b5").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b6").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b7").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b8").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+				$("button#b9").click(()=>{
+					if(count%2 === 0){
+						event.currentTarget.style.backgroundColor = "blue";
+					}
+					else{
+						event.currentTarget.style.backgroundColor = "red";
+					}
+				});
+			});
+
+
+
+			//let button = document.getElementsByClassName("b");
+			//let button = event.currentTarget.style.backgroundColor = "red";
+
+		</script>
+		<style>
+			button{
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</body>
+</html>
